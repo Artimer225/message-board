@@ -1,5 +1,7 @@
 <div class="message-container">
-    <h1><%= message.user %></h1>
-    <p><%= message.text %></p>
-    <h1><%= message.added %></h1>
+    <p class="message-user"><%= message.user %> says:</h1>
+        <div class="message-inner">
+            <p class="message-text"><%= message.text %></p>
+            <p class="message-date"><%= message.added %></h1>
+        </div>
 </div>

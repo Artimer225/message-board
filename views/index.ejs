@@ -7,12 +7,51 @@
     <title>Message Board</title>
 </head>
 <body>
-    <a href="/new">Send a new message</a>
-    <% console.log(messages) %>
-    <% messages.forEach((message) => { %>
-        <%- include('message', { message: message }) %>
-        <a href="/details/<%= message.id %>">Open in a new tab</a>
-    <% }) %>
-    
+    <div class="container">
+        <div>
+            <h1>
+                ✦ ALERT! SIGNAL INTERCEPTED ✦
+            </h1>
+            <p>
+            AREA: Alpha Centauri System — Sector C-3
+            </p>
+            <p>
+                NAV ZONE: ACEN-042-C
+            </p>
+            <br>
+            <p>STATUS: 2 UNKNOWN VESSELS</p>
+            <p>CONTACT TAGS: BANDIT-1 / BANDIT-2 </p>
+            <p>DISTANCE: 25,000 km</p>
+            <p>VECTOR: ↗ Bearing 042.7°</p>
+            <p>VESSEL CLASSIFICATION: POSSIBLE HOSTILE</p>
+            <p>HULL SIGNATURE: HI-TECH MILITARY</p>
+            <p>RECOMMENDED ACTIONS:
+                <ul>
+                    <li>
+                        Prepare evasive maneuver protocol
+                    </li>
+                    <li>
+                        DO NOT initiate combat
+                    </li>
+                    <li>
+                        Transmit distress signal immediately
+                    </li>
+                    <li>
+                        Pray
+                    </li>
+                </ul>
+            </p>
+            <br>
+            <p>> transmission attempt...</p>
+            <p>> standby...</p>
+            <p>> decoding transmissions in progress...</p>
+        </div>
+        <a href="/new">SEND A NEW MESSAGE</a>
+        <% console.log(messages) %>
+        <% messages.forEach((message) => { %>
+            <%- include('message', { message: message }) %>
+            <a href="/details/<%= message.id %>">OPEN MESSAGE IN A NEW TAB</a>
+        <% }) %>
+    </div>
 </body>
 </html>

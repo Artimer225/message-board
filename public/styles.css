@@ -1,0 +1,98 @@
+body {
+    display: flex;
+    height: 100vh;
+    font-family: 'IBM PS-55', sans-serif;
+    color: orange;
+    background: linear-gradient(to top, #000000, #000000, #333333, #333333);
+    background-size: 100% 1px;
+    margin: 0;
+    padding: 0;
+}
+
+
+@font-face {
+    font-family: 'IBM PS-55';
+    src: url('./Web437_IBM_PS-55_re.woff');
+}
+
+button {
+    font-family: 'IBM PS-55';
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.message-user {
+    font-weight: bold;
+}
+
+.message-inner {
+    margin-left: 20px;
+}
+
+.message-container {
+    font-size: 20px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+}
+
+a {
+    text-decoration: none;
+    color: #ffd000;
+    font-size: 18px;
+    text-align: center;
+    line-height: 2;
+    border: 2px solid rgb(255, 208, 0);
+    width: 40%;
+    filter: brightness(0.5);
+}
+
+a:hover {
+    filter: brightness(1);
+}
+
+
+.container {
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    width: 1000px;
+    border: 1px solid rgb(255, 208, 0);
+    padding: 5px;
+}
+
+.message-form {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+}
+
+.form-inner {
+    display: flex;
+    justify-content: space-between;
+}
+
+.form-submit {
+    background: none;
+    color: #ffd000;
+    border: 2px solid rgb(255, 208, 0);
+    filter: brightness(0.5);
+}
+
+.form-submit:hover {
+    filter: brightness(1);
+}
+
+label {
+    font-size: 18px;
+}
+
+input {
+    background: none;   
+    border: 1px solid rgb(255, 208, 0);
+    font-family: 'IBM PS-55';
+    color: rgb(255, 208, 0);
+    font-size: 18px;
+}

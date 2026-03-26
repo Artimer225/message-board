@@ -3,21 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="/styles.css">
+    <title>New message</title>
 </head>
 <body>
-    <a href="/">Return to the homepage</a>
-    <form method="POST" action="/new">
-    <h1>New message</h1>
-    <div>
-        <label for="sender">Your name:</label>
-        <input type="text" id="sender" name="user">
+    <div class="container">
+        <a href="/">Return to the homepage</a>
+        <form method="POST" action="/new" class="message-form">
+        <h1>New message</h1>
+        <div class="form-inner">
+            <label for="sender" class="message-user">Your name:</label>
+            <input type="text" id="sender" name="user">
+        </div>
+        <div class="form-inner">
+            <label for="messageText" class="message-text">Your message:</label>
+            <input type="text" id="messageText" name="text">
+        </div>
+        <button type="submit" class="form-submit">SEND</button>
+    </form>
     </div>
-    <div>
-        <label for="messageText">Your message:</label>
-        <input type="text" id="messageText" name="text">
-    </div>
-    <button type="submit">Send message</button>
-</form>
+
 </body>
 </html>

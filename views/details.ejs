@@ -4,9 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Message by <%= message.user %> </title>
+    <link rel="stylesheet" href="/styles.css">
 </head>
 <body>
-    <a href="/">Return to the homepage</a>
-    <%- include('message', {message: message}) %>
+    <div class="container">
+        <a href="/">Return to the homepage</a>
+        <%- include('message', {message: message}) %>
+    </div>
 </body>
 </html>
